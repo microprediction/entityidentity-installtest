@@ -1,0 +1,25 @@
+# Include documentation
+include README.md
+include LICENSE
+include TEST_COVERAGE.md
+include TEST_RESULTS.md
+include BUGS_FOUND.md
+
+# Include configuration files
+include pytest.ini
+include pyproject.toml
+include setup.py
+include requirements.txt
+
+# Include test runner script
+include run_tests.sh
+
+# Include tests
+recursive-include tests *.py
+recursive-include tests *.md
+
+# Exclude cache and compiled files
+global-exclude __pycache__
+global-exclude *.py[cod]
+global-exclude .pytest_cache
+

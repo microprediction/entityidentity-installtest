@@ -1,33 +1,50 @@
 # EntityIdentity Install Test
 
-This repository provides minimal tests and examples for the [entityidentity](https://github.com/microprediction/entityidentity) package.
+[![Tests](https://img.shields.io/badge/tests-22%20passed-brightgreen)]()
+[![Python](https://img.shields.io/badge/python-3.8+-blue)]()
+[![License](https://img.shields.io/badge/license-MIT-blue)]()
+
+This repository provides comprehensive tests and examples for the [entityidentity](https://github.com/microprediction/entityidentity) package.
+
+**Status**: ✅ All 22 tests passing
 
 ## Quick Start
 
-1. **Install dependencies:**
+### Option 1: Install as Package (Recommended)
 
 ```bash
-pip install -r requirements.txt
+# Install the package
+pip install -e .
+
+# Run tests via command
+entityidentity-test
+
+# Run examples via command
+entityidentity-examples
 ```
 
-2. **Run tests:**
+### Option 2: Direct Usage
 
 ```bash
-# Quick test runner (recommended)
-./run_tests.sh
+# Install dependencies
+pip install -r requirements.txt
 
-# Or run with pytest directly
+# Run tests with pytest
 pytest -v
 
-# Or run specific test suites
+# Run specific test files
 pytest tests/test_import.py -v              # Basic functionality
 pytest tests/test_data_resolution.py -v     # Comprehensive data tests
+
+# Run examples
+python tests/examples.py
+# Or: python -m tests.examples
 ```
 
-3. **Run examples:**
+### Option 3: Quick Shell Script
 
 ```bash
-python tests/examples.py
+./run_tests.sh
 ```
 
 ## What is EntityIdentity?
@@ -62,7 +79,11 @@ Rigorous tests that verify the package data and functionality:
 ### Examples (examples.py)
 Practical usage demonstrations for all major features.
 
-For detailed test coverage information, see [TEST_COVERAGE.md](TEST_COVERAGE.md).
+### Documentation
+- [INSTALL.md](INSTALL.md) - Complete installation guide
+- [TEST_COVERAGE.md](TEST_COVERAGE.md) - Detailed test coverage information
+- [TEST_RESULTS.md](TEST_RESULTS.md) - Latest test results (all pass! ✅)
+- [BUGS_FOUND.md](BUGS_FOUND.md) - Known issues in the package
 
 ## Learn More
 

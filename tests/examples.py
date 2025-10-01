@@ -78,7 +78,8 @@ def example_list_and_filter():
     print(f"Companies with 'tech' in name: {len(tech_companies)}")
 
 
-if __name__ == "__main__":
+def main():
+    """Main entry point for examples"""
     print("=" * 50)
     print("EntityIdentity Package Examples")
     print("=" * 50)
@@ -121,4 +122,8 @@ if __name__ == "__main__":
     print("\n" + "=" * 50)
     print("Examples completed!")
     print("=" * 50)
+
+
+if __name__ == "__main__":
+    main()
 
