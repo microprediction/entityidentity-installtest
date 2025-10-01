@@ -29,9 +29,9 @@ setup(
     ],
     python_requires=">=3.8",
     install_requires=[
-        "entityidentity",
+        "entityidentity>=0.0.2",
         "pytest>=7.0.0",
-        "pandas",
+        "pandas>=1.3.0",
     ],
     extras_require={
         "dev": [

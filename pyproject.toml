@@ -27,9 +27,9 @@ classifiers = [
 ]
 
 dependencies = [
-    "entityidentity",
+    "entityidentity>=0.0.2",
     "pytest>=7.0.0",
-    "pandas",
+    "pandas>=1.3.0",
 ]
 
 [project.optional-dependencies]
