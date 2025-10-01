@@ -6,7 +6,6 @@
 
 This repository provides comprehensive tests and examples for the [entityidentity](https://github.com/microprediction/entityidentity) package.
 
-**Status**: ✅ All 22 tests passing ([see latest run](https://github.com/microprediction/entityidentity-installtest/actions/workflows/tests_312.yml))
 
 ## Quick Start
 
